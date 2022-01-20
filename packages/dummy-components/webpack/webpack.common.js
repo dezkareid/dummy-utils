@@ -8,7 +8,7 @@ const { ModuleFederationPlugin } = webpack.container;
 const name = camelCase(pkg.name);
 
 const exposes = {
-  './GoogleMaps': './src/GoogleMaps'
+  './DummyComponent': './src/DummyComponent'
 };
 
 const config = {
