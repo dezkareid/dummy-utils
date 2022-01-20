@@ -1,0 +1,28 @@
+name: Dummy components library
+on:
+  push:
+    paths:
+    - 'packages/dummy-components/**'
+    branches:
+      - main
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: packages/dummy-components
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+      - name: Install
+        run: npm ci
+        env:
+          CI: true
+      - name: Build library
+        run: npm run build
+      - name: Create a release
+        run: npm run semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
