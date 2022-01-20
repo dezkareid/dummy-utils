@@ -1,7 +1,7 @@
 import React from 'react';
 
 function DummyComponent() {
-  return <span>Hello</span>;
+  return <span>Hello Codigo Facilito</span>;
 }
 
 export default DummyComponent;
