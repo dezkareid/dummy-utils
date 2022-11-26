@@ -1,3 +1,10 @@
+# [@dezkareid/dummy-components-v1.1.3](https://github.com/dezkareid/dummy-utils/compare/dummy-components-1.1.2...dummy-components-1.1.3) (2022-11-26)
+
+
+### Bug Fixes
+
+* change title ([6939d62](https://github.com/dezkareid/dummy-utils/commit/6939d6283550208926831dcd795e14e0fd37b268))
+
 # [@dezkareid/dummy-components-v1.1.2](https://github.com/dezkareid/dummy-utils/compare/dummy-components-1.1.1...dummy-components-1.1.2) (2022-11-26)
 
 
