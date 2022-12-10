@@ -1,3 +1,10 @@
+# [@dezkareid/dummy-components-v1.1.4](https://github.com/dezkareid/dummy-utils/compare/dummy-components-1.1.3...dummy-components-1.1.4) (2022-12-10)
+
+
+### Bug Fixes
+
+* something ([199388a](https://github.com/dezkareid/dummy-utils/commit/199388af9e764ed2de309ea776c62a7eb9a1a89d))
+
 # [@dezkareid/dummy-components-v1.1.3](https://github.com/dezkareid/dummy-utils/compare/dummy-components-1.1.2...dummy-components-1.1.3) (2022-11-26)
 
 
