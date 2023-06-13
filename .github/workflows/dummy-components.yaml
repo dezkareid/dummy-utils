@@ -5,6 +5,7 @@ on:
     - 'packages/dummy-components/**'
     branches:
       - main
+      - next
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -22,7 +23,25 @@ jobs:
       - name: Build library
         run: npm run build
       - name: Create a release
-        run: npm run semantic-release
+        uses: cycjimmy/semantic-release-action@v3
+        with:
+          semantic_version: 18
+          branches: |
+            [
+              '+([0-9])?(.{+([0-9]),x}).x',
+              'main',
+              'next',
+              'next-major',
+              {name: 'beta', prerelease: true},
+              {name: 'alpha', prerelease: true}
+            ]
+          extends: |
+            semantic-release-monorepo@7.0.5
+          extra_plugins: |
+            @semantic-release/changelog@6.0.0
+            @semantic-release/git@^10.0.0
+          working_directory: ./packages/dummy-components
+          tag_format: dummy-components-${version}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
