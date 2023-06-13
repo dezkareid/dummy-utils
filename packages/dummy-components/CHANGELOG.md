@@ -1,3 +1,10 @@
+# [@dezkareid/dummy-components-v1.1.5](https://github.com/dezkareid/dummy-utils/compare/dummy-components-1.1.4...dummy-components-1.1.5) (2023-06-13)
+
+
+### Bug Fixes
+
+* remove semantic-release ([cc66966](https://github.com/dezkareid/dummy-utils/commit/cc66966047afdeae6328abb54dc3066dd3f36d71))
+
 # [@dezkareid/dummy-components-v1.1.4](https://github.com/dezkareid/dummy-utils/compare/dummy-components-1.1.3...dummy-components-1.1.4) (2022-12-10)
 
 
